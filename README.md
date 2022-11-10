@@ -5,4 +5,6 @@ This is a free limited version of my custom discord bot template.
 
 Feel free to reach out if you have questions or commissions!
 
-	Bussiness mail: botmakerstudio@gmail.com
+Bussiness mail:
+
+	botmakerstudio@gmail.com
