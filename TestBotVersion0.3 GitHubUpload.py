@@ -20,33 +20,38 @@ client = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print ("\n-----------------------------")
     print("TESTBOT 0.3 IS NOW ONLINE")
-    print ("-----------------------------")
+    print ("-----------------------------\n")
 ##
 
 
 #text commands
 @client.command()
 async def hello(ctx):
-    response =(random.randint(1 , 4)) #changes the value of response to a random value to and from the selected values
+    response =(random.randint(1 , 5)) #changes the value of response to a random value to and from the selected values
 
-    Response1 = "hello there!" #insert desired response
-    Response2 = "greetings!"
-    Response3 = "i don\'t want to talk to you right now"
-    Response4 = "HeLlOo"
+    Response1 = "INSERT MESSAGE 1" #insert desired response
+    Response2 = "INSERT MESSAGE 2"
+    Response3 = "INSERT MESSAGE 3"
+    Response4 = "INSERT MESSAGE 4"
+    Response5 = "INSERT MESSAGE 5"
 
 
 
+ #random replies
     if (response == 1): #if the value of response is 1, send response1's message
-        await ctx.send(Response1)
+        await ctx.send(Response1) and print ("1: INSERT MESSAGE 1") #print is here for debug purposes, this way you can see in your script what the response value is currently at
 
     elif (response == 2):
-        await ctx.send(Response2)
+        await ctx.send(Response2) and print ("2: INSERT MESSAGE 2")
 
     elif (response == 3):
-        await ctx.send(Response3)
+        await ctx.send(Response3) and print ("3: INSERT MESSAGE 3")
 
     elif (response == 4):
-        await ctx.send(Response4)
+        await ctx.send(Response4) and print ("4: INSERT MESSAGE 4")
+
+    elif (response == 5):
+        await ctx.send(Response5) and print ("5: INSERT MESSAGE 5")
 ##
 
 
@@ -55,7 +60,7 @@ async def hello(ctx):
 @client.event
 async def on_member_join(member):
     print ("NEW MEMBER HAS JOINED THE SERVER")
-    channel = client.get_channel(CHANNEL ID) #channel id (used to make it send the message in the desired channel)
+    channel = client.get_channel(INSERT CHANNEL ID) #channel id (used to make it send the message in the desired channel)
     await channel.send("welcome to the server!")
 ##
 
