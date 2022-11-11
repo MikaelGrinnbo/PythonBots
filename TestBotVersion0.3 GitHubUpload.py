@@ -18,9 +18,9 @@ client = commands.Bot(command_prefix='!', intents=intents)
 #if bot is running print text
 @client.event
 async def on_ready():
-    print ("\n-----------------------------")
-    print("TESTBOT 0.3 IS NOW ONLINE")
-    print ("-----------------------------\n")
+    print ("\n------------------------------")
+    print (f'{client.user} IS NOW ONLINE')
+    print ("------------------------------\n")
 ##
 
 
